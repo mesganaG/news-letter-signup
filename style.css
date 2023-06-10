@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+@font-face {
+    font-family: fa;
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    background-color:hsl(234, 29%, 20%);
+}
+
+
+
+main {
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+   width: 100%;
+   max-width: 1400px;
+   margin: 0 auto;
+   padding-top: 10rem;
+   padding-bottom: 10rem;
+}
+.main-container {
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:1rem;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 100%;
+    background-color:hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+
+
+/* text content container and elements  */
+.desktop-text-content {
+    width: 60%;
+
+}
+
+.text-content {
+
+    width: 80%;
+    margin-left: 4rem;
+}
+
+h1 {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 4rem;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+}
+
+
+.join-des p{
+    display: block;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+
+}
+
+.check-points p {
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.check-points p::before{
+    content: url(assets/images/icon-list.svg);
+    padding-right: 10px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.signup {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+    margin-left:4rem;
+    padding-top: 20px;
+}
+
+.signup label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+
+}
+
+
+.signup input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    width: 85%;
+    padding: 1rem;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+
+}
+
+.signup input:focus {
+    outline: 1px hsl(234, 29%, 20%) solid;
+}
+
+.signup button {
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    font-size: 1.2rem;
+    width: 85%;
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.signup button:hover {
+    background-image: linear-gradient(to right, hsla(4, 100%, 69%, 0.945), hsl(7, 100%, 67%));
+    box-shadow: 0 1px 1px hsl(4, 100%, 67%);
+
+
+}
+
+
+
+/* Image container */
+
+.desktop-img-container {
+    width: 60%;
+}
+
+.desktop-img-container img {
+   float: right;
+   max-width: 100%;
+   min-height: 100%;
+
+  
+}
+
+
+
+/* Media query for ipads or tablets */
+
+@media (min-width: 700px) and (max-width:945px) {
+
+    
+    main {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        width: 95%;
+        max-width: 1400px;
+        margin: 0 auto;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .main-container {
+    
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:1rem;
+        margin: 0 auto;
+        padding: 3%;
+        max-width: 100%;
+        background-color:hsl(0, 0%, 100%);
+        border-radius: 20px;
+    }
+    .text-content {
+        width: 90%;
+        margin-left: 2rem;
+    }
+    
+    h1 {
+      text-align: left;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 4rem;
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+    }
+    
+    
+    .join-des p{
+        display: inline-block;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 10px;
+    
+    }
+    
+    .check-points p {
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        text-align: left;
+    
+    }
+    
+    
+    .check-points p::before{
+        content: url(assets/images/icon-list.svg); 
+        padding-right: 10px;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+
+    .signup {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90%;
+        margin-left:2rem;
+        padding-top: 20px;
+    }
+    
+    .signup button {
+        width: 80%;
+    }
+    
+}
