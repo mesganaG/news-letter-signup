@@ -10,31 +10,37 @@
     
     <div class="thankyou-main">
         <div class="main-container-thankyou">
-                <div class="img-container"> <img src="assets/images/icon-list.svg" alt="chek-mark"></div>
 
-                <div class="text-content-thankyou">
+            <div class="img-container"> <img src="assets/images/icon-list.svg" alt="chek-mark"></div>
+
+            <div class="text-content-thankyou">
 
                     
-                    <h1>Thanks for subscribing! </h1>
+                <h1>Thanks for subscribing! </h1>
 
-                    <p>  A confirmation email has been sent to ash@loremcompany.com. 
+                <p>  A confirmation email has been sent to <span id="get-email">ash@loremcompany.com</span>
                         Please open it and click the button inside to confirm your subscription.</p>
 
-                </div>
+            </div>
 
-                <form action="" class="thankyou-form">
-                    <button type="button" name="button" > Dismiss message </button>
+            <form action="./index.html" method="get" class="thankyou-form">
+                <button type="submit" name="button" > Dismiss message </button>
 
 
-                </form>
-               
-
-       
-
+             </form>        
         </div>
 
-
-
     </div>
+
+
+    <script src="index.js"></script>
+
+    <script> 
+        var email = sessionStorage.getItem("get-email");
+        var emailInput = document.getElementById("get-email");
+        emailInput.textContent = email;
+    
+    
+    </script>
 </body>
 </html>

@@ -293,7 +293,6 @@ h1 {
     }
 
     .text-content {
-        background-color: aqua;
         width: 90%;
         margin-left: 1.5rem;
     }
@@ -333,11 +332,17 @@ h1 {
         gap: 1rem;
         width: 90%;
         margin-left:1.5rem;
+        margin-top: 2rem;
         padding-top: 20px;
     }
 
     .signup form button {
         margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    .signup form input {
+        width: 100%;
     }
     
 }
@@ -354,7 +359,6 @@ h1 {
     margin: 0 auto;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    background-color: black;
 }
 
 .main-container-thankyou {
