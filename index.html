@@ -40,9 +40,9 @@
 
 
          <div class="signup">
-            <form id="form-input" action="./thankyou.html" method="get">
+            <form id="form-input" action="./thankyou.html" method="get" novalidate>
               
-            <label for="email-input">Email address</label>
+            <div class="label-class"><label for="email-input" id="input-label">Email address</label> <span id="invalid-email">Valid email required</span></div>
             <input type="email" name="email" id="email-input" placeholder="email@company.com"> 
             <button type="submit" name="button" id="submit-id" > Subscribe to monthly newsletter</button>
 

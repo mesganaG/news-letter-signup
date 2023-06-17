@@ -31,6 +31,7 @@ main {
    padding-top: 10rem;
    padding-bottom: 10rem;
 }
+
 .main-container {
  
     display: flex;
@@ -102,17 +103,37 @@ h1 {
 }
 
 .signup label {
+
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    width: 100%;
+    width: fit-content;
 
+}
+
+.label-class {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#invalid-email {
+    display: none;
+    color: hsl(7, 100%, 67%);
+}
+
+
+.signup label::after {
+    
+    margin-left: 4rem;
+    font-size: 1rem;
+    color: rgb(236, 122, 122);
 }
 
 
 .signup input {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    width: 85%;
+    width: 100%;
     padding: 1rem;
     border: 2px solid whitesmoke;
     border-radius: 10px;
@@ -127,7 +148,7 @@ h1 {
     background-color: hsl(234, 29%, 20%);
     color: white;
     font-size: 1.2rem;
-    width: 85%;
+    width: 100%;
     padding: 1rem;
     border: none;
     border-radius: 10px;
@@ -276,7 +297,7 @@ h1 {
         width: 95%;
         max-width: 1400px;
         margin: 0 auto;
-        padding-top: 2rem;
+        padding-top: 0;
         padding-bottom: 2rem;
     }
 
@@ -290,6 +311,8 @@ h1 {
         width: 100%;
         background-color:hsl(0, 0%, 100%);
         border-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
     .text-content {
@@ -305,18 +328,21 @@ h1 {
     h1 {
         text-align: left;
         font-family: 'Roboto', sans-serif;
-        margin-top: 4rem;
+        margin-top: 3rem;
         font-size: 3rem;
         padding-bottom: 1rem;
     }
 
     .desktop-img-container {
         display: none;
+       
     }
 
     .mobile-img-container {
         display: block;
         width: 100%;
+        padding: 0;
+        
     }
 
     .mobile-img-container img {
@@ -356,7 +382,7 @@ h1 {
 .thankyou-main {
     width: 100%;
     max-width: 1400px;
-    margin: 0 auto;
+    margin: 10% auto;
     padding-top: 10rem;
     padding-bottom: 10rem;
 }
